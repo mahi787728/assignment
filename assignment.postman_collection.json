@@ -1,0 +1,341 @@
+{
+	"info": {
+		"_postman_id": "d030ac0b-b73b-475a-804b-1dbf3c0c8df5",
+		"name": "assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17737278",
+		"_collection_link": "https://www.postman.com/warped-shuttle-327587/workspace/appic/collection/17737278-d030ac0b-b73b-475a-804b-1dbf3c0c8df5?action=share&source=collection_link&creator=17737278"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/customer_create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTMwNTU1MzgsImV4cCI6MTY5MzA1OTEzOCwibmJmIjoxNjkzMDU1NTM4LCJqdGkiOiJ5M01LeTZFb2Z0b010WlpzIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.OT7fH-5dMNBYm20YDtzQIQ8lLBPNndfHVIafTJ6KK4I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "rajendra",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "kumawat",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "raj@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "jaipur",
+							"type": "text"
+						},
+						{
+							"key": "contact_number",
+							"value": "9111111111",
+							"type": "text"
+						},
+						{
+							"key": "qualification",
+							"value": "developer",
+							"type": "text"
+						},
+						{
+							"key": "work_ex_year",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "candidate_dob",
+							"value": "1997-08-02",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text"
+						},
+						{
+							"key": "resume",
+							"type": "file",
+							"src": "/C:/Users/dell/Downloads/1689527931.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/customer_create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer_create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "raj@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "raj@12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/customer_update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTMwNTU1MzgsImV4cCI6MTY5MzA1OTEzOCwibmJmIjoxNjkzMDU1NTM4LCJqdGkiOiJ5M01LeTZFb2Z0b010WlpzIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.OT7fH-5dMNBYm20YDtzQIQ8lLBPNndfHVIafTJ6KK4I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "first_name",
+							"value": "rajendra",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "kumawat",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "raj@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "jaipur",
+							"type": "text"
+						},
+						{
+							"key": "contact_number",
+							"value": "9111111111",
+							"type": "text"
+						},
+						{
+							"key": "qualification",
+							"value": "developer",
+							"type": "text"
+						},
+						{
+							"key": "work_ex_year",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "candidate_dob",
+							"value": "1997-08-02",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text"
+						},
+						{
+							"key": "resume",
+							"type": "file",
+							"src": "/C:/Users/dell/Downloads/1691643796.jpg"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/customer_update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer_update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/customer_list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTMwNTU1MzgsImV4cCI6MTY5MzA1OTEzOCwibmJmIjoxNjkzMDU1NTM4LCJqdGkiOiJ5M01LeTZFb2Z0b010WlpzIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.OT7fH-5dMNBYm20YDtzQIQ8lLBPNndfHVIafTJ6KK4I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/customer_list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/customer_delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2OTMwNTU1MzgsImV4cCI6MTY5MzA1OTEzOCwibmJmIjoxNjkzMDU1NTM4LCJqdGkiOiJ5M01LeTZFb2Z0b010WlpzIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.OT7fH-5dMNBYm20YDtzQIQ8lLBPNndfHVIafTJ6KK4I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "9",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/customer_delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"customer_delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/auth/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test ",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "raj2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
